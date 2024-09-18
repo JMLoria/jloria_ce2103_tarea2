@@ -17,4 +17,6 @@ add_executable(tarea2 src/main.cpp
         src/LinkedList/LinkedList.cpp
         src/LinkedList/LinkedList.h
         src/LinkedList/Node.cpp
-        src/LinkedList/Node.h)
+        src/LinkedList/Node.h
+        src/Array.cpp
+        src/Array.h)

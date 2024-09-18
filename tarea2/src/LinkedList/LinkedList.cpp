@@ -13,6 +13,7 @@ void LinkedList::insert(int data) {
     } else {
         while (temp->next != nullptr) {
             if (temp->data == data) {
+                cout << "Element already exists!" << endl;
                 return;
             }
             temp = temp->next;
@@ -26,7 +27,7 @@ void LinkedList::search(int data) {
     Node* temp = head;
     while (temp != nullptr) {
         if (temp->data == data) {
-            cout << "Element " << data << " found!" << endl;
+            // cout << "\t- Element " << data << " found!" << endl;
             return;
         }
         temp = temp->next;
@@ -34,6 +35,7 @@ void LinkedList::search(int data) {
 }
 
 void LinkedList::print() {
+    cout << "LinkedList: " << endl;
     Node* temp = head;
     int i = 0;
     while (temp != nullptr) {
