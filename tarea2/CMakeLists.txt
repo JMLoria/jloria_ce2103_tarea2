@@ -3,7 +3,7 @@ project(tarea2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(tarea2 src/main.cpp
+add_executable(tarea2 main.cpp
         src/BinaryTree/BinaryTree.cpp
         src/BinaryTree/BinaryTree.h
         src/BinaryTree/TreeNode.cpp
@@ -19,4 +19,6 @@ add_executable(tarea2 src/main.cpp
         src/LinkedList/Node.cpp
         src/LinkedList/Node.h
         src/Array.cpp
-        src/Array.h)
+        src/Array.h
+        src/Cases.cpp
+        src/Cases.h)

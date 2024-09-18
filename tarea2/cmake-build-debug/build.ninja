@@ -49,11 +49,11 @@ cmake_ninja_workdir = /home/jose/Documents/TEC/2024/II_Semestre/CE2103_Datos_II/
 
 build cmake_object_order_depends_target_tarea2: phony || .
 
-build CMakeFiles/tarea2.dir/src/main.cpp.o: CXX_COMPILER__tarea2_unscanned_Debug /home/jose/Documents/TEC/2024/II_Semestre/CE2103_Datos_II/Tareas/jloria_ce2103_tarea2/tarea2/src/main.cpp || cmake_object_order_depends_target_tarea2
-  DEP_FILE = CMakeFiles/tarea2.dir/src/main.cpp.o.d
+build CMakeFiles/tarea2.dir/main.cpp.o: CXX_COMPILER__tarea2_unscanned_Debug /home/jose/Documents/TEC/2024/II_Semestre/CE2103_Datos_II/Tareas/jloria_ce2103_tarea2/tarea2/main.cpp || cmake_object_order_depends_target_tarea2
+  DEP_FILE = CMakeFiles/tarea2.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/tarea2.dir
-  OBJECT_FILE_DIR = CMakeFiles/tarea2.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/tarea2.dir
 
 build CMakeFiles/tarea2.dir/src/BinaryTree/BinaryTree.cpp.o: CXX_COMPILER__tarea2_unscanned_Debug /home/jose/Documents/TEC/2024/II_Semestre/CE2103_Datos_II/Tareas/jloria_ce2103_tarea2/tarea2/src/BinaryTree/BinaryTree.cpp || cmake_object_order_depends_target_tarea2
   DEP_FILE = CMakeFiles/tarea2.dir/src/BinaryTree/BinaryTree.cpp.o.d
@@ -103,6 +103,12 @@ build CMakeFiles/tarea2.dir/src/Array.cpp.o: CXX_COMPILER__tarea2_unscanned_Debu
   OBJECT_DIR = CMakeFiles/tarea2.dir
   OBJECT_FILE_DIR = CMakeFiles/tarea2.dir/src
 
+build CMakeFiles/tarea2.dir/src/Cases.cpp.o: CXX_COMPILER__tarea2_unscanned_Debug /home/jose/Documents/TEC/2024/II_Semestre/CE2103_Datos_II/Tareas/jloria_ce2103_tarea2/tarea2/src/Cases.cpp || cmake_object_order_depends_target_tarea2
+  DEP_FILE = CMakeFiles/tarea2.dir/src/Cases.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/tarea2.dir
+  OBJECT_FILE_DIR = CMakeFiles/tarea2.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tarea2
@@ -111,7 +117,7 @@ build CMakeFiles/tarea2.dir/src/Array.cpp.o: CXX_COMPILER__tarea2_unscanned_Debu
 #############################################
 # Link the executable tarea2
 
-build tarea2: CXX_EXECUTABLE_LINKER__tarea2_Debug CMakeFiles/tarea2.dir/src/main.cpp.o CMakeFiles/tarea2.dir/src/BinaryTree/BinaryTree.cpp.o CMakeFiles/tarea2.dir/src/BinaryTree/TreeNode.cpp.o CMakeFiles/tarea2.dir/src/BubbleSort/BubbleSort.cpp.o CMakeFiles/tarea2.dir/src/MergeSort/MergeSort.cpp.o CMakeFiles/tarea2.dir/src/SelectionSort/SelectionSort.cpp.o CMakeFiles/tarea2.dir/src/LinkedList/LinkedList.cpp.o CMakeFiles/tarea2.dir/src/LinkedList/Node.cpp.o CMakeFiles/tarea2.dir/src/Array.cpp.o
+build tarea2: CXX_EXECUTABLE_LINKER__tarea2_Debug CMakeFiles/tarea2.dir/main.cpp.o CMakeFiles/tarea2.dir/src/BinaryTree/BinaryTree.cpp.o CMakeFiles/tarea2.dir/src/BinaryTree/TreeNode.cpp.o CMakeFiles/tarea2.dir/src/BubbleSort/BubbleSort.cpp.o CMakeFiles/tarea2.dir/src/MergeSort/MergeSort.cpp.o CMakeFiles/tarea2.dir/src/SelectionSort/SelectionSort.cpp.o CMakeFiles/tarea2.dir/src/LinkedList/LinkedList.cpp.o CMakeFiles/tarea2.dir/src/LinkedList/Node.cpp.o CMakeFiles/tarea2.dir/src/Array.cpp.o CMakeFiles/tarea2.dir/src/Cases.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/tarea2.dir
   POST_BUILD = :
