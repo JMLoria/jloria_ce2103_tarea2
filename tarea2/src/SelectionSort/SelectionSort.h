@@ -3,9 +3,10 @@
 
 #include <iostream>
 #include <string>
-#include <chrono>
-#include <utility>
 
-std::pair<int, double> selectionSort(int arr[], int n);
+
+int minIndex(int a[], int i, int j);
+
+void selectionSort(int a[], int n, int i = 0);
 
 #endif //TAREA2_SELECTIONSORT_H

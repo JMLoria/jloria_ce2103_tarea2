@@ -61,24 +61,17 @@ void merge(int array[], int left, int mid, int right)
     }
 }
 
-#include <chrono>
-#include <utility>
-
-std::pair<int, double> mergeSort(int array[], int left, int right) {
-    auto start = std::chrono::high_resolution_clock::now();
-
-    if(left < right) {
-        int mid = (left + right) / 2;
+void mergeSort(int array[], int left, int right)
+{
+    if(left < right)
+    {
+        int mid = (left+right)/2;
 
         // Sort first and second halves
         mergeSort(array, left, mid);
-        mergeSort(array, mid + 1, right);
+        mergeSort(array, mid+1, right);
 
         // Finally merge them
         merge(array, left, mid, right);
     }
-
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
-    return {right - left + 1, duration.count()};
 }

@@ -1,20 +1,17 @@
 #include "SelectionSort.h"
 
+int minIndex(int a[], int i, int j) {
+    if (i == j)
+        return i;
+    int k = minIndex(a, i + 1, j);
+    return (a[i] < a[k]) ? i : k;
+}
 
-std::pair<int, double> selectionSort(int arr[], int n) {
-    auto start = std::chrono::high_resolution_clock::now();
-
-    for (int i = 0; i < n - 1; i++) {
-        int min_idx = i;
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[min_idx]) {
-                min_idx = j;
-            }
-        }
-        std::swap(arr[min_idx], arr[i]);
-    }
-
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
-    return {n, duration.count()};
+void selectionSort(int a[], int n, int i) {
+    if (i == n)
+        return;
+    int k = minIndex(a, i, n - 1);
+    if (k != i)
+        std::swap(a[k], a[i]);
+    selectionSort(a, n, i + 1);
 }

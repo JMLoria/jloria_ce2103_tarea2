@@ -5,6 +5,6 @@
 
 void merge(int arr[], int l, int m, int r);
 
-std::pair<int, double> mergeSort(int array[], int left, int right);
+void mergeSort(int arr[], int l, int r);
 
 #endif //TAREA2_MERGESORT_H
