@@ -3,10 +3,14 @@
 
 using namespace std;
 
-void worstCase(int i, int n[], double bsTime[], double msTime[], double ssTime[], double llTime[], double btTime[]){
+void calculateN(int i, int n[]){
     for (int j = 0; j < i; j++) {
         n[j] = pow(10, j);
     }
+}
+
+void worstCase(int i, int n[], double bsTime[], double msTime[], double ssTime[], double llTime[], double btTime[]){
+    calculateN(i, n);
 
     for (int j = 0; j < i; j++) {
         int bs[n[j]], ss[n[j]], ms[n[j]];
@@ -63,9 +67,7 @@ void worstCase(int i, int n[], double bsTime[], double msTime[], double ssTime[]
 }
 
 void bestCase(int i, int n[], double bsTime[], double msTime[], double ssTime[], double llTime[], double btTime[]){
-    for (int j = 0; j < i; j++) {
-        n[j] = pow(10, j);
-    }
+    calculateN(i, n);
 
     for (int j = 0; j < i; j++) {
         int bs[n[j]], ss[n[j]], ms[n[j]];
@@ -124,9 +126,7 @@ void bestCase(int i, int n[], double bsTime[], double msTime[], double ssTime[],
 }
 
 void averageCase(int i, int n[], double bsTime[], double msTime[], double ssTime[], double llTime[], double btTime[]){
-    for (int j = 0; j < i; j++) {
-        n[j] = pow(10, j);
-    }
+    calculateN(i, n);
 
     for (int j = 0; j < i; j++) {
         int bs[n[j]], ss[n[j]], ms[n[j]];

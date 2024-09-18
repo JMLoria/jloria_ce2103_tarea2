@@ -19,6 +19,8 @@
 
 using namespace std;
 
+void calculateN(int i, int n[]);
+
 void worstCase(int i, int n[], double bsTime[], double msTime[], double ssTime[], double llTime[], double btTime[]);
 
 void bestCase(int i, int n[], double bsTime[], double msTime[], double ssTime[], double llTime[], double btTime[]);
