@@ -1,0 +1,15 @@
+# ninja log v6
+1	17	1726698481412041664	build.ninja	9a0e99cb01d73e49
+2	323	1726690707522772687	CMakeFiles/tarea2.dir/src/SelectionSort/SelectionSort.cpp.o	53cb3b0cf013e8ce
+1	317	1726690707521772699	CMakeFiles/tarea2.dir/src/MergeSort/MergeSort.cpp.o	1a87e8488079a326
+1	685	1726697125461088276	CMakeFiles/tarea2.dir/src/Array.cpp.o	ddfd860fbc4980ac
+2	16	1726691610280423486	CMakeFiles/tarea2.dir/src/LinkedList/Node.cpp.o	c36553ce7ed2ff2c
+1	628	1726698234373147363	CMakeFiles/tarea2.dir/main.cpp.o	c0071b90ddcffd8f
+2	709	1726697313351726170	CMakeFiles/tarea2.dir/src/Cases.cpp.o	e5ccd06f93915feb
+1	285	1726696553188282719	CMakeFiles/tarea2.dir/src/BinaryTree/BinaryTree.cpp.o	881c958c91ba98e6
+2	283	1726696553189282707	CMakeFiles/tarea2.dir/src/LinkedList/LinkedList.cpp.o	7e7203c825f3426d
+2	15	1726693304832120086	CMakeFiles/tarea2.dir/src/BinaryTree/TreeNode.cpp.o	9c6b15bc36da847b
+1	313	1726690707521772699	CMakeFiles/tarea2.dir/src/BubbleSort/BubbleSort.cpp.o	10857ee632f60728
+628	681	1726698235000139481	tarea2	cbe3521a701b2037
+2	682	1726697313351726170	CMakeFiles/tarea2.dir/src/main.cpp.o	de58f7c5aeda4227
+0	16	1726698481412041664	build.ninja	9a0e99cb01d73e49
